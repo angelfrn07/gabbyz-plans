@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The AI Crew Setup for Hosts</title>
+<meta name="description" content="The free setup guide for short-term rental hosts: the three jobs you hand to an AI crew, what to text it, and the rules that keep a real person in front of every guest. By Angel Mendoza, My Royal Estates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F2EC;--paper:#FFFFFF;--ink:#13213F;--mute:#5A6276;--line:#D9D6CC;--gold:#B8912A;--goldx:#D4AF37;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1628;--paper:#182A52;--ink:#F1EFE8;--mute:#B4B9C7;--line:#2E3D63;--gold:#D4AF37;--goldx:#E6C65B;color-scheme:dark}}
+*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 Barlow,system-ui,-apple-system,sans-serif;padding:env(safe-area-inset-top,0px) 16px calc(40px + env(safe-area-inset-bottom,0px))}
+.wrap{max-width:560px;margin:0 auto}
+header{padding:36px 0 14px}
+.brand{font:600 13px/1.3 "Barlow Condensed",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+h1{margin:8px 0 0;font:800 clamp(46px,14vw,72px)/.9 "Barlow Condensed",Impact,sans-serif;letter-spacing:-.5px;text-transform:uppercase}
+.lead{margin:12px 0 0;font-size:20px;font-weight:500;max-width:30ch}
+.sub{margin:6px 0 0;color:var(--mute)}
+.cta{display:block;text-decoration:none;text-align:center;background:var(--ink);color:var(--bg);padding:18px 16px;border-radius:8px;margin:22px 0 8px;font:800 24px/1 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.03em}
+@media (prefers-color-scheme:dark){.cta{background:var(--goldx);color:#13213F}}
+.cta[hidden]{display:none}
+.cta small{display:block;margin-top:6px;font:500 14px/1.2 Barlow,sans-serif;text-transform:none;letter-spacing:0;opacity:.85}
+.cta.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+@media (prefers-color-scheme:dark){.cta.alt{color:var(--goldx);border-color:var(--goldx)}}
+.note{text-align:center;font-size:14px;color:var(--mute);margin:0 0 10px}
+section{margin-top:30px}
+h2{margin:0 0 10px;font:800 24px/1 "Barlow Condensed",sans-serif;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+h2::before{content:"";width:14px;height:14px;background:var(--gold);border-radius:2px;flex:none}
+p{margin:0 0 12px}
+ul,ol{margin:0;padding:0;list-style:none}
+li{padding:11px 0;border-top:1px solid var(--line)}li:last-child{border-bottom:1px solid var(--line)}
+li b{display:block;font-weight:600}li span{color:var(--mute);font-size:15px}
+ol{counter-reset:step}
+ol li{padding-left:38px;position:relative}
+ol li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:12px;width:26px;height:26px;border-radius:50%;background:var(--gold);color:#13213F;font:800 15px/26px "Barlow Condensed",sans-serif;text-align:center}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:10px}
+.card p{margin:0;color:var(--mute);font-size:15px}
+.card .n{font:800 36px/1 "Barlow Condensed",sans-serif;color:var(--ink)}
+.card .n em{font:600 16px/1 Barlow,sans-serif;font-style:normal;color:var(--mute)}
+.texts{display:grid;gap:8px;margin-top:4px}
+.bubble{background:var(--paper);border:1px solid var(--line);border-radius:16px 16px 16px 4px;padding:11px 14px;font-size:16px;max-width:92%}
+.bubble i{display:block;font-style:normal;font-size:13px;color:var(--mute);margin-top:4px}
+.rules li b{font-weight:600}
+.sign{margin-top:30px;padding-top:14px;border-top:3px solid var(--ink);font-size:15px}
+.sign b{display:block;font-size:17px}
+footer{margin-top:18px;font-size:13px;color:var(--mute)}
+a{color:inherit}
+@media print{
+  :root{--bg:#FFFFFF;--paper:#FFFFFF;--ink:#13213F;--mute:#4A5166;--line:#C9C6BC;color-scheme:light}
+  body{padding:0;font-size:12.5pt}
+  .wrap{max-width:none}
+  header{padding-top:0}
+  h1{font-size:44pt}
+  section,.card,li,.bubble,.sign{break-inside:avoid}
+  .cta{background:#13213F !important;color:#FFFFFF !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .cta.alt{background:transparent !important;color:#13213F !important}
+  h2::before,ol li::before{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:11pt;color:#4A5166}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">AI for Hosts &middot; Free setup guide</div>
+    <h1>The AI crew<br>setup<br>for hosts</h1>
+    <p class="lead">Three jobs you hand off. One line you text. A real person in front of every guest.</p>
+    <p class="sub">This is how I run my own short-term rentals in Amarillo and Canyon, Texas. Read it in five minutes. Set it up tonight.</p>
+  </header>
+
+  <section>
+    <h2>What an AI crew is</h2>
+    <p>It is an assistant you already pay for, loaded with your houses, your rules and your people, and told to do three jobs. You text it one line. It drafts the reply, the cleaner text or the price card. A person says yes. Then it goes out.</p>
+    <p>It is not a chatbot on your listing. Your guest never talks to it. To your guest, it is your team.</p>
+  </section>
+
+  <section>
+    <h2>The three jobs you hand off</h2>
+    <ul>
+      <li><b>1. Guest questions.</b><span>A guest asks about late checkout, parking, the wifi, where the pool towels are. The crew reads your house file and your rules, writes the reply, and holds it. You or your desk person taps send. Refunds, repairs and discounts always come to you first.</span></li>
+      <li><b>2. Cleaner and handyman texts.</b><span>On checkout day the crew texts your cleaner the turnover: which house, when the guest leaves, when the next one lands. When something breaks, it texts your handyman with the job, up to a dollar cap you set. Over the cap, it asks you before anyone is sent.</span></li>
+      <li><b>3. The nightly price watch.</b><span>Each night the crew looks at your next 30 nights: empty nights, events in town, nights priced far from the houses around you. It sends you one short card. It never changes a price. You say yes or no.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What you text it</h2>
+    <p>One line. No logging in. The crew figures out which job it is and which house you mean.</p>
+    <div class="texts">
+      <div class="bubble">Guest at Maple is asking about late checkout. Draft it.<i>Guest question. You get the draft back to send.</i></div>
+      <div class="bubble">Cleaner for Maple, Friday. Guest leaves at 11.<i>Cleaner text. Goes to the cleaner you set for that house.</i></div>
+      <div class="bubble">Handyman: Maple water heater is out.<i>Repair. Sent if it is under your cap, held if it is over.</i></div>
+      <div class="bubble">Price for Thanksgiving week, Maple.<i>Price card. Comes back to you. Nothing changes until you say so.</i></div>
+      <div class="bubble">Morning card.<i>Who checks in, who checks out, what is empty, what needs you today.</i></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The rules that keep a person in the loop</h2>
+    <p>Paste these into your bot's standing instructions before it answers a single guest. They are the same ones I run.</p>
+    <ul class="rules">
+      <li><b>Nothing reaches a guest without a person's yes.</b><span>Every guest reply is a draft until your desk sends it.</span></li>
+      <li><b>Never say AI, bot or model to a guest.</b><span>To the guest, the crew is your team or your staff. That is all they need to know.</span></li>
+      <li><b>No reply on refunds, repairs or discounts without the host.</b><span>The crew can say "let me check with the team." It cannot promise money or a fix.</span></li>
+      <li><b>Door codes go out on the day, never early.</b><span>Keep the codes in your property system, not in the file the crew reads from.</span></li>
+      <li><b>Never mention invoices or off-platform contact in a booking-site thread.</b><span>The platforms read those threads. Keep the crew clean.</span></li>
+      <li><b>Nothing is sent to a cleaner or handyman over your cap without you.</b><span>Set the cap on day one. Change it any time.</span></li>
+      <li><b>Log every miss.</b><span>What it got wrong, who caught it, how many minutes it cost. Fix the file, not the bot.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Set it up tonight</h2>
+    <ol>
+      <li><b>Pick the bot you already pay for.</b><span>Any assistant that can keep a file and run a routine on a schedule will do. Keep it on your own account, not a friend's.</span></li>
+      <li><b>Write one page per house.</b><span>House name, address, checkout time, door system, wifi name, parking, trash day, and the five things guests ask most. No codes.</span></li>
+      <li><b>Write one page for your people.</b><span>Each cleaner: which houses, their rate, how they get paid. Your handyman: number and dollar cap. Your desk: the one person who says yes.</span></li>
+      <li><b>Paste the rules above.</b><span>Word for word, as standing instructions. Then paste the three pages.</span></li>
+      <li><b>Run a shadow week.</b><span>The crew drafts, you send. Every time you change a draft, fix the house page. By day seven the drafts stop needing edits.</span></li>
+      <li><b>Go live with the desk behind it.</b><span>Week two the crew drafts and your desk person sends. On day 14 count the hours you got back and the misses. Then it is yours.</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Want the files already written?</h2>
+    <div class="card">
+      <div class="n">$47 <em>The Guest Desk Kit</em></div>
+      <p>The guest-answer prompt I run, stripped of my houses, plus the house-rules template, the checkout-day template and a one-page read-me that says where to paste each one. Nothing to build. Paste it into your own bot tonight.</p>
+    </div>
+    <a class="cta" id="kit" hidden href="#">Get the Guest Desk Kit<small>$47. Instant download.</small></a>
+    <a class="cta alt" id="waitlist" href="mailto:angel@myroyal-estates.com?subject=CREW%20waitlist&body=Hi%20Angel%2C%20put%20me%20on%20the%20list.%20My%20name%20is%20____%2C%20I%20have%20____%20doors%2C%20my%20phone%20is%20____.">Join the waitlist<small>For the done-for-you install. Free. I text you when a spot opens.</small></a>
+    <p class="note">Tap and send me one email. I text you back the same business day.</p>
+  </section>
+
+  <div class="sign">
+    <b>Angel Mendoza</b>
+    My Royal Estates, Amarillo, Texas<br>
+    I run this on my own houses first and I film it. If something breaks, it breaks on mine before it gets to yours.
+  </div>
+  <footer>&copy; My Royal Estates. Questions: <a href="mailto:angel@myroyal-estates.com">angel@myroyal-estates.com</a> &middot; <a href="../">The done-for-you install</a></footer>
+</div>
+<script>
+/* Paste the store link for the Guest Desk Kit here when it exists. Empty keeps the button hidden. */
+const KIT_LINK = "";
+if (KIT_LINK) {
+  const a = document.getElementById("kit");
+  a.href = KIT_LINK;
+  a.hidden = false;
+}
+</script>
+</body>
+</html>
