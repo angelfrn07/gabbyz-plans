@@ -51,8 +51,9 @@ a{color:inherit}
     <p class="sub">For hosts with 5 to 30 doors. Built and run first on my own houses in Amarillo and Canyon, Texas.</p>
   </header>
 
-  <a class="cta" id="start" href="mailto:angel@myroyal-estates.com?subject=GabbyZ%20start&body=Hi%20Angel%2C%20I%20want%20to%20start.%20My%20name%20is%20____%2C%20I%20have%20____%20doors%2C%20my%20phone%20is%20____.">Start for $1,500<small>Holds your start date. Pay the rest the night you go live.</small></a>
+  <a class="cta" id="start" href="mailto:angel@myroyal-estates.com?subject=CREW%20waitlist&body=Hi%20Angel%2C%20put%20me%20on%20the%20list.%20My%20name%20is%20____%2C%20I%20have%20____%20doors%2C%20my%20phone%20is%20____.">Join the waitlist<small>Free. Installs open a few at a time and I text you when yours does.</small></a>
   <p class="note" id="startnote">Tap and send me one email. I text you back the same business day.</p>
+  <a class="cta" id="install" hidden href="#">Start the install for $1,500<small>Card checkout. Holds your start date. The rest is due the night you go live.</small></a>
 
   <section>
     <h2>What you get</h2>
@@ -66,7 +67,7 @@ a{color:inherit}
   </section>
 
   <section>
-    <h2>What it costs</h2>
+    <h2>What the done-for-you install costs</h2>
     <div class="price">
       <div class="card"><div class="n">$5,000 <em>to set it up</em></div><p>$1,500 the day we start. $3,500 the night we go live.</p></div>
       <div class="tiers">
@@ -108,10 +109,10 @@ a{color:inherit}
 /* Paste the Stripe Payment Link here when it exists. Empty keeps the email button. */
 const STRIPE_START_LINK = "";
 if (STRIPE_START_LINK) {
-  const a = document.getElementById("start");
+  const a = document.getElementById("install");
   a.href = STRIPE_START_LINK;
-  a.innerHTML = 'Start for $1,500<small>Card checkout. Holds your start date. The rest is due the night you go live.</small>';
-  document.getElementById("startnote").textContent = "Secure checkout by Stripe. I text you within one business day to set day 0.";
+  a.hidden = false;
+  document.getElementById("startnote").textContent = "Waitlist is free. Ready now? Secure checkout by Stripe below; I text you within one business day to set day 0.";
 }
 </script>
 </body>
